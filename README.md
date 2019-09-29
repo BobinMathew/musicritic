@@ -21,6 +21,18 @@ Musicritic has still got a long way to go, but here are some things you can alre
 -   Look up albums, tracks, artists, and playlists;
 -   See more information on tracks and albums in specific pages.
 
+### Home page (when logged in)
+![Home page](./assets/home-page.png)
+
+### Track page
+![Track page](./assets/track-page.png)
+
+### Album page
+![Album page](./assets/album-page.png)
+
+### Search results page
+![Search results page](./assets/search-results-page.png)
+
 ## Community
 
 So you want to help us? How kind of you! Just know you can contribute in many ways.
@@ -58,7 +70,7 @@ Access [Firebase](https://console.firebase.google.com/) with your Google Account
 
 With both configured, you're ready to run **Musicritic**!
 
-#### Staring Musicritic
+#### Starting Musicritic
 
 With *Firebase* and *Spotify* configured, now you'll need to install the dependencies. We suggest using [*yarn*](https://yarnpkg.com/en/):
 
