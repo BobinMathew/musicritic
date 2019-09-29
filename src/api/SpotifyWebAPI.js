@@ -41,3 +41,6 @@ export const getAlbum = async (id: string) => spotify.getAlbum(id);
 
 export const getArtistAlbums = async (id: string, includeGroups: string[]) =>
     spotify.getArtistAlbums(id, { includeGroups });
+
+export const getArtist = async (id: string) =>
+    spotify.getArtist(id);
