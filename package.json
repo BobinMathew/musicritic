@@ -18,9 +18,9 @@
         "lint": "eslint ."
     },
     "dependencies": {
-        "axios": "^0.18.0",
+        "axios": "^0.18.1",
         "body-parser": "^1.18.3",
-        "bootstrap": "^4.0.0",
+        "bootstrap": "^4.3.1",
         "cookie-parser": "^1.4.3",
         "cors": "^2.8.4",
         "dotenv": "^6.0.0",
@@ -30,8 +30,8 @@
         "firebase-admin": "^6.0.0",
         "font-awesome": "^4.7.0",
         "formik": "^0.11.11",
-        "jquery": "^3.3.1",
-        "lodash": "^4.17.11",
+        "jquery": "^3.4.0",
+        "lodash": "^4.17.13",
         "moment": "^2.23.0",
         "popper.js": "^1.14.1",
         "querystring": "^0.2.0",
@@ -77,6 +77,6 @@
         "style-loader": "^0.20.3",
         "url-loader": "^1.0.1",
         "webpack": "^3.11.0",
-        "webpack-dev-server": "^2.9.7"
+        "webpack-dev-server": "^3.1.11"
     }
 }
