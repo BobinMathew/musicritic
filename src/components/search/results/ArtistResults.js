@@ -8,6 +8,7 @@ import ArtistCard from '../../common/artist/ArtistCard';
 import './Results.css';
 
 type Props = {
+    history: any,
     results: Array<Artist>,
 };
 
@@ -29,10 +30,20 @@ class ArtistResult extends Component<Props, State> {
         });
     }
 
+    handleClick = (artist: Artist) => {
+        this.props.history.push(`/artist/${artist.id}/`);
+    }
+
     render() {
         const listResults = this.state.artists.map(artist => (
-            <div key={artist.id} className="col-3 result">
-                <ArtistCard artist={artist} />
+            <div
+              key={artist.id}
+              className="col-3 result"
+            >
+                <ArtistCard
+                  artist={artist}
+                  handleClick={() => this.handleClick(artist)}
+                />
             </div>
         ));
         return <div className="row">{listResults}</div>;
