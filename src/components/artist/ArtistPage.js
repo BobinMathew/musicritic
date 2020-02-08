@@ -5,6 +5,8 @@ import { Artist } from 'spotify-web-sdk';
 
 import { getArtist } from '../../api/SpotifyWebAPI';
 
+import './ArtistPage.css';
+
 type Props = {
     match: any,
 };
@@ -42,13 +44,24 @@ class AlbumPage extends Component<Props, State> {
     render() {
         const { artist }: State = this.state;
         return (
-            <div className="row album-page border container shadow-sm">
-                {artist.images && artist.images.map(element =>
-                    <img src={element.url} alt={artist.name} />)}
-                {artist.name}
+            <div className="artist-page-header">
+                <div className="track-page-header__data">
+                    {artist.imageUrl && <img
+                      alt="Album"
+                      className="track-page-header__cover shadow-lg"
+                      src={artist.imageUrl}
+                    />}
+                    <ArtistInfo artist={artist} />
+                </div>
             </div>
         );
     }
 }
+
+const ArtistInfo = ({ artist }: State) => (
+    <div className="text-center track-info text-light">
+        <h1>{artist.name}</h1>
+    </div>
+);
 
 export default AlbumPage;
